@@ -6,7 +6,7 @@
         "modules": false,
         "shippedProposals": true
       }
-    ],
+    ]
   ],
   "plugins": [
     [
@@ -16,7 +16,7 @@
         "version": "^7.10.4"
       }
     ],
-    "@mpxjs/babel-plugin-inject-page-events",
+    "@mpxjs/babel-plugin-inject-page-events"
   ],
   "sourceType": "unambiguous",
   "env": {

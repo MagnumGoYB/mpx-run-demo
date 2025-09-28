@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "mpx-cli-service build",
+    "commit": "git-cz",
     "format": "prettier . --write --log-level warn && prettier-package-json --write",
     "preinstall": "only-allow pnpm",
     "lint": "eslint --ext .js,.ts,.mpx src/",

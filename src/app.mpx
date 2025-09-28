@@ -4,8 +4,6 @@ import apiProxy from '@mpxjs/api-proxy'
 
 mpx.use(apiProxy, { usePromise: true })
 createApp({})
-
-console.log('app.mpx')
 </script>
 
 <style></style>
@@ -14,6 +12,13 @@ console.log('app.mpx')
 {
   "pages": [
     "./pages/index"
-  ]
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundColorContent": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+  },
 }
 </script>

@@ -1,14 +1,22 @@
 <template>
   <list></list>
+  <button bind:tap="tap">点击</button>
+  <view>{{ msg }}</view>
 </template>
 
-<script lang="ts">
-import { createPage } from '@mpxjs/core'
+<script lang="ts" setup>
+import { ref } from '@mpxjs/core'
 
-createPage({
-  onLoad() {
-    //
-  }
+const msg = ref('Hello Mpx')
+
+const tap = () => {
+  console.log('tap')
+  msg.value = 'Ohh Mpx!'
+}
+
+defineExpose({
+  msg,
+  tap
 })
 </script>
 
